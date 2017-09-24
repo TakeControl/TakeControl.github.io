@@ -1,14 +1,14 @@
 ---
 layout:     post
 title:      "并发基础"
-subtitle:   "并发基础"
+
 date:       2017-09-24 22:00:00
 author:     "ShiYu"
 catalog: true
 tags:
     - Java
 ---
-#并发基础
+
 
 Java内存模型中，内存分为两类：main memorey和working memory，main memory是线程共享的，working memory中存放的是线程所需变量的拷贝，线程若要对main memory中内容进行操作，需要先拷贝到自己的working memory。
 
