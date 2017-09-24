@@ -13,7 +13,8 @@ tags:
 Java内存模型中，内存分为两类：main memorey和working memory，main memory是线程共享的，working memory中存放的是线程所需变量的拷贝，线程若要对main memory中内容进行操作，需要先拷贝到自己的working memory。
 
 基于上述模型，引发出多线程共享变量时会发生的同步问题，引发同步问题的因素有3点：
-###可见性 
+
+### 可见性
 
 假设一个对象中有一个变量i,i是保存在main memory中的，当一个线程要操作i时，首先需要从main memory中将i拷贝到自己的working memory中，然后此线程便可以在自己的working memory中修改i，修改结束后再将i从working memory 写回main memory中，此时新的i值才能被其它线程读取。当一个线程修改了变量值，修改后的值能立刻被其它线程读取即是可见性。
 
