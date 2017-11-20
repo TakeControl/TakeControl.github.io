@@ -282,7 +282,7 @@ hash = 10
 hash % n = 10 % 8 = 2
 (n - 1) & hash = 7 & 10 = 0 1 1 1 & 1 0 1 0 = 0 0 1 0 = 2
 ```
-转自：[Stack Overflow](https://stackoverflow.com/questions/27230938/why-hashmap-insert-new-node-on-index-n-1-hash)
+摘自：[Stack Overflow](https://stackoverflow.com/questions/27230938/why-hashmap-insert-new-node-on-index-n-1-hash)
 
 ##get
 
