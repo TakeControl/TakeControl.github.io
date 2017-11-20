@@ -6,7 +6,7 @@ date:       2017-11-20 23:00:00
 author:     "ShiYu"
 catalog: true
 tags:
-    - Web
+    - Java
 ---
 ## 为什么需要ConcurrentHashMap
 众所周知HashMap是线程不安全的，关于为什么HashMap是线程不安全的，可以看我以前的文章，有简单介绍过。HashMap在多线程环境中，不仅会出现数据丢失，严重的时候甚至会出现Infinite Loop，导致cpu负载100%从而导致宕机。为了解决HashMap不能用语多线程环境的问题，Sun的工程师们提供了很多方法，比如HashTable、Collections.synchronizedMap(new HashMap(...))、自定义Lock等方法，但这些方法都摆脱不了一个问题，那就是*效率*，以上方法都是对每个方法加上锁，锁是独占资源对，效率自然就提高不上去，这时候ConcurrentHashMap应运而生，ConcurrentHashMap相对于以上方法，利用分段锁巧妙地在保证同步的同时，效率相比前面的方法也有很大提升。下面我们就来看看ConcurrentHashMap的具体实现。
