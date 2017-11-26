@@ -5,7 +5,7 @@ header-img: img/home-bg.jpg
 email: "18352862393@163.com"
 description: "编程 | 生活 | 随笔，史禹的博客"
 keyword: "史禹, ShiYu, 史禹的博客,  博客, 个人网站, 互联网, WEB, 设计, 产品"
-url: "http://www.shixiaoyu.top"              # your host, for absolute URL
+url: "http://syhong.net"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 
